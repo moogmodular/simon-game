@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon Game FCC</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Simon Game</h1>
+                <svg version="1.1" id="ui-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1060 900" style="enable-background:new 0 0 1024 696.2605;" xml:space="preserve">
+<path id="db-background" class="st0" d="M924,0h-823C46,0,1,45,1,100v496.2605c0,55,45,100,100,100h823c55,0,100-45,100-100V100
+	C1024,45,979,0,924,0z" filter="url(#f3)"></path>
+<path id="field-1" class="st1 fields" d="M522,181.13025h161c44.1828,0,80,35.8172,80,80v77h241v-238c0-44.1828-35.8172-80-80-80H522
+	V181.13025z"></path>
+<path id="field-0" class="st2 fields" d="M262,338.13025v-77c0-44.1828,35.8172-80,80-80h160v-161H101c-44.1828,0-80,35.8172-80,80v238H262
+	z"></path>
+<path id="field-3" class="st3 fields" d="M763,358.13025v77c0,44.18274-35.8172,80-80,80H522v161h402c44.1828,0,80-35.81726,80-80v-238H763
+	z"></path>
+<path id="field-2" class="st4 fields" d="M502,515.13025H342c-44.1828,0-80-35.81726-80-80v-77H21v238c0,44.18274,35.8172,80,80,80h401
+	V515.13025z"></path>
+<g>
+	<path id="dashboard" class="st5" d="M342,495.13025c-33.08398,0-60-26.91602-60-60v-174c0-33.08398,26.91602-60,60-60h341
+		c33.08398,0,60,26.91602,60,60v174c0,33.08398-26.91602,60-60,60H342z"></path>
+	<g id="strict-ui">
+		<rect x="567.41669" y="449.29691" class="st6" width="59.16667" height="9.83333"></rect>
+		<text transform="matrix(1 0 0 1 567.41669 457.81741)" class="st7 st8">Strict Mode</text>
+		<path class="st0" d="M648.5,444.63025h-103c-5.52283,0-10-4.47714-10-10v-18.5c0-5.52286,4.47717-10,10-10h103
+			c5.52283,0,10,4.47714,10,10v18.5C658.5,440.15311,654.02283,444.63025,648.5,444.63025z"></path>
+		<path id="strict-indicator" class="st9" d="M564,442.13025h-19c-3.86597,0-7-3.134-7-7v-19c0-3.866,3.13403-7,7-7h19
+			c3.86597,0,7,3.134,7,7v19C571,438.99625,567.86597,442.13025,564,442.13025z"></path>
+	</g>
+	<g id="io-ui">
+		<rect x="406.70834" y="449.29691" class="st6" width="40.58334" height="9.83333"></rect>
+		<text transform="matrix(1 0 0 1 406.70834 457.81741)" class="st7 st8">OFF/ON</text>
+		<path class="st0" d="M478.5,444.63025h-103c-5.52286,0-10-4.47714-10-10v-18.5c0-5.52286,4.47714-10,10-10h103
+			c5.52286,0,10,4.47714,10,10v18.5C488.5,440.15311,484.02286,444.63025,478.5,444.63025z"></path>
+		<path id="io-indicator" class="st9" d="M394,442.13025h-19c-3.866,0-7-3.134-7-7v-19c0-3.866,3.134-7,7-7h19c3.866,0,7,3.134,7,7
+			v19C401,438.99625,397.866,442.13025,394,442.13025z"></path>
+	</g>
+	<g id="start">
+		<rect x="407.15198" y="368.01419" class="st6" width="39.71635" height="15.77956"></rect>
+		<text transform="matrix(1 0 0 1 407.1524 381.68582)" class="st7 st10">Start</text>
+		<path id="start-container" class="st11" d="M478.79117,360.52557H375.22916c-5.52283,0-10-4.47714-10-10v-103.562
+			c0-5.52284,4.47717-10,10-10h103.56201c5.52286,0,10,4.47716,10,10v103.562
+			C488.79117,356.04843,484.31403,360.52557,478.79117,360.52557z" filter="url(#dropShadow)"></path>
+	</g>
+	<g id="level-count">
+		<rect x="549.89191" y="368.01419" class="st6" width="94.94483" height="15.77956"></rect>
+		<text transform="matrix(1 0 0 1 549.89197 381.68582)" class="st7 st10">Level </text>
+		<path id="lvl-container" class="st0" d="M649.14532,360.52557H545.58331c-5.52283,0-10-4.47714-10-10v-103.562
+			c0-5.52284,4.47717-10,10-10h103.56201c5.52289,0,10,4.47716,10,10v103.562
+			C659.14532,356.04843,654.66821,360.52557,649.14532,360.52557z"></path>
+        <text id="lvl-count" x="600" y="330" font-family="sans-serif" font-size="80px" fill="red"></text>
+	</g>
+</g>
+
+                        <filter id="dropShadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+        <feOffset dx="2" dy="4" />
+        <feMerge>
+            <feMergeNode />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+
+    <filter id="f3" x="0" y="0" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+
+
+</svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay-success">
+        <div>
+            <h2>Congratulation Message!</h2>
+        </div>
+    </div>
+    <div id="overlay-failed">
+        <div>
+            <h2>False!</h2>
+        </div>
+    </div>
+
+
+    <footer id="footer_load">
+    </footer>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/progressbar.min.js"></script>
+<script src="js/howler.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+<!--
+
+
+
+-->

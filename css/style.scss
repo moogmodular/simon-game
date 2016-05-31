@@ -1,0 +1,98 @@
+$col1: #270102;
+$col2: #556B8A;
+$col3: #0B0101;
+$col4: #befcc7;
+$col5: #8C0402;
+
+$boxes: 150px;
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: $col4;
+  background-image: url("../img/wood.jpg");
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  overflow: hidden;
+  font-weight: 300;
+}
+
+footer {
+  margin: 50px 0;
+}
+
+h1 {
+  font-family: 'Inconsolata', ;
+  font-size: 10em;
+}
+
+.container {
+  margin-top: 10vh;
+  text-align: center;
+}
+
+#overlay-success, #overlay-failed {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+#overlay-failed div {
+  width: 300px;
+  margin: 100px auto;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 15px;
+  text-align: center;
+}
+
+.fields {
+  width: $boxes;
+  height: $boxes;
+}
+
+#field-0 {
+  fill: blue;
+}
+
+#field-1 {
+ fill: yellow;
+}
+
+#field-2 {
+  fill: green;
+}
+
+#field-3 {
+  fill: red;
+}
+#field-active {
+  fill: #444444;
+}
+
+#dashboard {
+  fill: $col4;
+}
+
+.st0{fill:#1A1A1A;}
+.st1{fill:#FFFF00;}
+.st2{fill:#0000FF;}
+.st3{fill:#FF0000;}
+.st4{fill:#00FF00;}
+.st5{fill:#E6E6E6;}
+.st6{fill:none;}
+.st7{font-family:'Josefin Sans', sans-serif;}
+.st8{font-size:12px;}
+.st9{fill:#933D3D;}
+.st10{font-size:19.25642px;}
+.st11{fill:#6DA854;}
+
+
